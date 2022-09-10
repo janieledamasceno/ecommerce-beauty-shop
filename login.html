@@ -30,16 +30,18 @@
   <main class="cadastro container">
     <form action="" class="formulario">
       <h1 class="font-g-b cor-3">Iniciar Sessão</h1>
-      <div>
-        <input type="text" class="font-p" required maxlength="50" data-tipo="email" aria-labelledby="email" placeholder="Escreva seu email">
-        <span class="input-mensagem-erro font-p"></span>
-      </div>
-      <div class="textarea">
-        <input type="password" class="font-p" required maxlength="50" data-tipo="senha" aria-labelledby="senha" placeholder="Escreva sua senha">
 
-        <span class="input-mensagem-erro font-p"></span>
+      <div>
+        <input type="email" pattern="^[a-zA-Z.]+@[a-zA-Z.]+.[a-zA-Z]$" class="font-p" data-input="login-email" placeholder="Digite seu email" required>
+        <span class="input-mensagem-erro font-p" data-error="login-email"></span>
       </div>
-      <button type="submit" class="botao font-p cor-1">Entrar</button>
+
+      <div class="textarea">
+        <input type="password" class="font-p" data-tipo="senha" aria-labelledby="senha" placeholder="Digite sua senha" data-input="login-password" required>
+        <span class="input-mensagem-erro font-p" data-error="login-password"></span>
+      </div>
+
+      <button type="submit" class="botao font-p cor-1" value="Entrar">Entrar</button>
     </form>
   </main>
   <footer>
@@ -76,6 +78,7 @@
       <p>2022</p>
     </div>
   </footer>
+<script src="./js/error.js" type="module" defer></script>
 </body>
 
 </html>
