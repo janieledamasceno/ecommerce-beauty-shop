@@ -1,6 +1,6 @@
 .intro__bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-      url("../../assets/img/intro-desktop.jpg");
+      url("../../assets/img/img-intro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -25,7 +25,7 @@
   
   @media (max-width: 800px) {
     .intro__bg {
-      background: url("../../assets/img/intro-tablet.jpg");
+      background: url("../../assets/img/img-intro.jpg");
       /* background-repeat: no-repeat; */
       background-size: cover;
     }
